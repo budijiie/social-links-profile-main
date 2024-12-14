@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+    --clrGreen: hsl(75, 94%, 57%);
+    --clrWhite: hsl(0, 0%, 100%);
+    --clrGrey700: hsl(0, 0%, 20%);
+    --clrGrey800: hsl(0, 0%, 12%);
+    --clrGrey900: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--clrWhite);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--clrGrey900);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 85%;
+    max-width: 384px;
+    height: 613px;
+    background-color: var(--clrGrey800);
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 0.333em;
+}
+
+.profile-picture {
+    display: flex;
+    width: 88px;
+    flex-basis: 88px;
+    border-radius: 50%;
+    margin-bottom: 28px;
+}
+
+#location {
+    color: var(--clrGreen);
+    margin-bottom: 1.3rem;
+}
+
+#profession {
+    margin-bottom: 1.7rem;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.social-link {
+    width: 100%;
+}
+
+button {
+    background-color: var(--clrGrey700);
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--clrGreen);
+    color: var(--clrGrey900);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1em;
+}
+
+.attribution p{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    font-size: 11px;
+    color: var(--clrWhite);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--clrGreen);
+}
+  
